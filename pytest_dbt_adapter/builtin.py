@@ -219,11 +219,11 @@ models:
 
 
 TEST_PASSING_DATA_TEST = """
-select 1 as id where id = 2
+select 1 as id from dual where 1 = 2
 """
 
 TEST_FAILING_DATA_TEST = """
-select 1 as id where id = 1
+select 1 as id from dual where 1 = 1
 """
 
 
